@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Zoya Hasan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact me</h1>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="random@email.com">
+      
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" value="IS THIS WORKING">
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message">Heyy</textarea>
+      
+        <button type="submit">Send</button>
+      </form>
+      
+</body>
+
+<style>
+    form {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1em;
+    }
+
+    label {
+        grid-column: 1 / 2;
+    }
+
+    input, textarea {
+        grid-column: 2 / -1;
+        width: 100%;
+    }
+
+    button {
+        grid-column: 1 / -1;
+        padding: 0.5em;
+        justify-self: center;
+    }
+</style>
+
+</html>

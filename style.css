@@ -1,0 +1,177 @@
+/* style.css */
+
+:root {
+  --color-accent: #ff3366; /* Replace this with your preferred accent color */
+}
+
+
+/* Prevent content from getting too wide and center it */
+body {
+  font-family: 'Times', sans-serif; 
+  max-width: 100ch;               /* Limit the maximum width */
+  margin-inline: auto;            /* Center the content horizontally */
+  padding: 0 1rem;                /* Add padding to prevent content from touching the edges */
+}
+
+/* Make sure all the content is within a centered container */
+main {
+  width: 100%;
+  max-width: 100ch;               /* Restrict width to prevent content from stretching too much */
+  margin: 0 auto;                 /* Center the content */
+  padding: 1rem;                  /* Add padding to create space inside */
+}
+
+
+
+/* General nav styling */
+nav {
+  text-align: center; /* Center the text */
+  padding: 0.5em; /* Add spacing around the nav */
+  margin-bottom: 1em; /* Separate nav from the content */
+  border-bottom: 1px solid #d3d3d3; /* Subtle gray bottom border */
+}
+
+/* Style for navigation links */
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+  padding: 0.5em; /* Add spacing */
+  display: inline-block; /* Proper block-level behavior */
+  padding-bottom: 0.1em; /* Consistent height */
+  border-bottom: 0.4em solid transparent; /* Start with no visible border */
+  transition: border-color 0.2s, background-color 0.2s; /* Smooth transitions */
+}
+
+/* Hover styles for navigation links */
+nav a:hover {
+  border-bottom-color: var(--color-accent); /* Accent color for hover border */
+  background-color: rgba(255, 51, 102, 0.1); /* Light hue of accent color */
+}
+
+/* Style for the current page link */
+nav a.current {
+  border-bottom: 0.4em solid #d3d3d3; /* Persistent border for current page */
+}
+
+
+
+
+form {
+  display: grid;
+  grid-template-columns: 100px 1fr; /* Column 1: Fixed width, Column 2: Flexible */
+  gap: 1em; /* Adds space between rows and columns */
+  max-width: 600px; /* Limits the form's width */
+  margin: 0 auto; /* Centers the form on the page */
+}
+
+label {
+  grid-column: 1 / 2; /* Places label in the first column */
+  text-align: right; /* Aligns text to the right for better label alignment */
+}
+
+input, textarea, button {
+  grid-column: 2 / 3; /* Aligns with input fields and textarea */
+  width: 100%; /* Ensures consistent width across all fields */
+  padding: 0.5em; /* Adds padding for better appearance */
+  border: 1px solid #ccc; /* Adds a subtle border for inputs and button */
+  border-radius: 4px; /* Smooth edges for inputs and button */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+textarea {
+  resize: vertical; /* Allows vertical resizing only */
+  height: 100px; /* Sets a default height */
+}
+
+button {
+  background-color: #f0f0f0; /* Sets a neutral background color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  text-align: center; /* Centers the button text */
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Adds a hover effect */
+}
+
+
+header {
+  background-color: #f8f8f8;
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+header nav a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header nav a.active {
+  text-decoration: underline;
+}
+
+
+
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  line-height: 1.1;
+}
+
+/* Grid Container for Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 1em;
+  align-items: start;
+}
+
+.projects article h2 {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.1;
+  text-wrap: balance;
+  color: #333;
+}
+
+.projects article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects article p {
+  margin: 0;
+  color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 300%;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 200%;
+  margin-bottom: 0.5em;
+}
+
