@@ -1,177 +1,157 @@
-/* style.css */
+/* Automatically adapts to light or dark mode */
+html {
+  /* color-scheme: light dark; /* Automatically adapts to light or dark mode */
+  /*background-color: Canvas; /* Adapts to light/dark system colors */
+  /*color: CanvasText; /* Adapts text color to light/dark mode */ 
+  accent-color: var(--color-accent);  
+}
 
 :root {
-  --color-accent: #ff3366; /* Replace this with your preferred accent color */
+  --color-accent: #ff3366; 
+  --border-color: oklch(50% 10% 200 / 40%); 
+  --nav-bg: Canvas; 
+  --nav-hover-bg: color-mix(in oklch, var(--color-accent), canvas 85%);
+  color-scheme: light dark;
 }
 
-
-/* Prevent content from getting too wide and center it */
+/* General page styling */
 body {
   font-family: 'Times', sans-serif; 
-  max-width: 100ch;               /* Limit the maximum width */
-  margin-inline: auto;            /* Center the content horizontally */
-  padding: 0 1rem;                /* Add padding to prevent content from touching the edges */
+  max-width: 100ch;
+  margin-inline: auto;
+  padding: 0 1rem;
 }
 
-/* Make sure all the content is within a centered container */
-main {
-  width: 100%;
-  max-width: 100ch;               /* Restrict width to prevent content from stretching too much */
-  margin: 0 auto;                 /* Center the content */
-  padding: 1rem;                  /* Add padding to create space inside */
+/* Make the background and text fully adapt to dark mode */
+body {
+  background-color: Canvas; /* Adapts to light or dark mode */
+  color: CanvasText;
 }
-
-
 
 /* General nav styling */
 nav {
-  text-align: center; /* Center the text */
-  padding: 0.5em; /* Add spacing around the nav */
-  margin-bottom: 1em; /* Separate nav from the content */
-  border-bottom: 1px solid #d3d3d3; /* Subtle gray bottom border */
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  background-color: var(--nav-bg); /* Background that adjusts with mode */
+  border-bottom: 1px solid var(--border-color); /* Subtle border color */
 }
 
 /* Style for navigation links */
 nav a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit the text color */
-  padding: 0.5em; /* Add spacing */
-  display: inline-block; /* Proper block-level behavior */
-  padding-bottom: 0.1em; /* Consistent height */
-  border-bottom: 0.4em solid transparent; /* Start with no visible border */
-  transition: border-color 0.2s, background-color 0.2s; /* Smooth transitions */
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+  display: inline-block;
+  padding-bottom: 0.1em;
+  border-bottom: 0.4em solid transparent;
+  transition: border-color 0.2s, background-color 0.2s;
 }
+
+/* Position the switcher in the top-right corner */
+.color-scheme {
+  position: absolute; /* Take it out of the normal document flow */
+  top: 1rem; /* Distance from the top edge */
+  right: 1rem; /* Distance from the right edge */
+  font-size: 80%; /* Make it less prominent */
+}
+
+
 
 /* Hover styles for navigation links */
 nav a:hover {
   border-bottom-color: var(--color-accent); /* Accent color for hover border */
-  background-color: rgba(255, 51, 102, 0.1); /* Light hue of accent color */
+  background-color: var(--nav-hover-bg); /* Transparent accent background */
 }
 
 /* Style for the current page link */
 nav a.current {
-  border-bottom: 0.4em solid #d3d3d3; /* Persistent border for current page */
+  border-bottom: 0.4em solid var(--color-accent); /* Accent color for current page */
 }
 
+/* Dark mode overrides using media query */
 
+/*@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212; /* Dark gray background */
+   /* color: #ffffff; /* White text for dark mode */
+  /*} 
 
+  nav {
+    background-color: #1e1e1e; /* Darker nav background */
+   /* border-bottom: 1px solid var(--border-color); /* Adjusted for dark mode */
+  /*}
 
-form {
-  display: grid;
-  grid-template-columns: 100px 1fr; /* Column 1: Fixed width, Column 2: Flexible */
-  gap: 1em; /* Adds space between rows and columns */
-  max-width: 600px; /* Limits the form's width */
-  margin: 0 auto; /* Centers the form on the page */
+  nav a {
+    color: #ffffff; /* White text for nav links in dark mode */
+ /* }
+
+  nav a:hover {
+    background-color: rgba(255, 51, 102, 0.2); /* Slightly more visible hover effect */
+ /* }
+
+  nav a.current {
+    color: #ff3366; /* Bright color for the current link */
+  /*}
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    line-height: 1.1;
+  } 
+  
+  /* Grid Container for Projects */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+    padding: 1em;
+  }
+  
+  .projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 1em;
+    align-items: start;
+  }
+  
+  .projects article h2 {
+    margin: 0;
+    font-size: 1.25em;
+    line-height: 1.1;
+    text-wrap: balance;
+    color: #333;
+  }
+  
+  .projects article img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .projects article p {
+    margin: 0;
+    color: #555;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+  
+  h1 {
+    font-size: 300%;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 200%;
+    margin-bottom: 0.5em;
+  }
 }
-
-label {
-  grid-column: 1 / 2; /* Places label in the first column */
-  text-align: right; /* Aligns text to the right for better label alignment */
-}
-
-input, textarea, button {
-  grid-column: 2 / 3; /* Aligns with input fields and textarea */
-  width: 100%; /* Ensures consistent width across all fields */
-  padding: 0.5em; /* Adds padding for better appearance */
-  border: 1px solid #ccc; /* Adds a subtle border for inputs and button */
-  border-radius: 4px; /* Smooth edges for inputs and button */
-  box-sizing: border-box; /* Ensures padding doesn't overflow */
-}
-
-textarea {
-  resize: vertical; /* Allows vertical resizing only */
-  height: 100px; /* Sets a default height */
-}
-
-button {
-  background-color: #f0f0f0; /* Sets a neutral background color */
-  cursor: pointer; /* Changes cursor to pointer on hover */
-  text-align: center; /* Centers the button text */
-}
-
-button:hover {
-  background-color: #e0e0e0; /* Adds a hover effect */
-}
-
-
-header {
-  background-color: #f8f8f8;
-  padding: 1em;
-  border-bottom: 1px solid #ddd;
-}
-
-header nav a {
-  margin-right: 1em;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-header nav a.active {
-  text-decoration: underline;
-}
-
-
-
-
-h1 {
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 1.5em;
-  line-height: 1.1;
-}
-
-/* Grid Container for Projects */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 1em;
-  padding: 1em;
-}
-
-.projects article {
-  display: grid;
-  grid-template-rows: subgrid;
-  grid-row: span 3;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  gap: 1em;
-  align-items: start;
-}
-
-.projects article h2 {
-  margin: 0;
-  font-size: 1.25em;
-  line-height: 1.1;
-  text-wrap: balance;
-  color: #333;
-}
-
-.projects article img {
-  max-width: 100%;
-  height: auto;
-}
-
-.projects article p {
-  margin: 0;
-  color: #555;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  text-wrap: balance;
-}
-
-h1 {
-  font-size: 300%;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 200%;
-  margin-bottom: 0.5em;
-}
-
