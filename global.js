@@ -2,10 +2,10 @@ console.log("IT’S ALIVE!");
 
 // Pages array
 let pages = [
-  { url: "/portfolio/", title: "Home" },
-  { url: "/portfolio/projects/", title: "Projects" },
-  { url: "/portfolio/resume/", title: "Resume" },
-  { url: "/portfolio/contacts/", title: "Contacts" },
+  { url: "/portfolio-new/", title: "Home" },
+  { url: "/portfolio-new/projects/", title: "Projects" },
+  { url: "/portfolio-new/resume/", title: "Resume" },
+  { url: "/portfolio-new/contacts/", title: "Contacts" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
 
