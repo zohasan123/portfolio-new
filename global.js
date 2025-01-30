@@ -1,13 +1,21 @@
 console.log("IT’S ALIVE!");
 
 // Pages array
-let pages = [
+/*let pages = [
   { url: "/portfolio/", title: "Home" },
   { url: "/portfolio/projects/", title: "Projects" },
   { url: "/portfolio/resume/", title: "Resume" },
   { url: "/portfolio/contacts/", title: "Contacts" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
-];
+];*/
+
+let pages = [
+      { url: '', title: 'Home' },
+      { url: 'projects/', title: 'Projects' },
+      { url: 'contacts/', title: 'Contact' },
+      { url: 'resume/', title: 'Resume' },
+      { url: 'https://github.com/zohasan123', title: 'GitHub' },
+    ];
 
 // Create a <nav> element and prepend it to <body>
 let nav = document.createElement("nav");
