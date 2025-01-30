@@ -3,9 +3,9 @@ console.log("IT’S ALIVE!");
 // Pages array
 let pages = [
   { url: "/portfolio-new/", title: "Home" },
-  { url: "/portfolio-new/projects/", title: "Projects" },
-  { url: "/portfolio-new/resume/", title: "Resume" },
-  { url: "/portfolio-new/contacts/", title: "Contacts" },
+  { url: "projects/", title: "Projects" },
+  { url: "resume/", title: "Resume" },
+  { url: "contacts/", title: "Contacts" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
 
