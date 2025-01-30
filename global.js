@@ -1,13 +1,27 @@
 console.log("IT’S ALIVE!");
 
-// Pages array
+// // Pages array
+// let pages = [
+//   { url: "/portfolio-new/", title: "Home" },
+//   { url: "/portfolio-new/projects/", title: "Projects" },
+//   { url: "/portfolio-new/resume/", title: "Resume" },
+//   { url: "/portfolio-new/contacts/", title: "Contacts" },
+//   { url: "https://github.com/zohasan123", title: "GitHub" },
+// ];
+
+
+
 let pages = [
-  { url: "/portfolio-new/", title: "Home" },
-  { url: "/portfolio-new/projects/", title: "Projects" },
-  { url: "portfolio-new/resume/", title: "Resume" },
-  { url: "/portfolio-new/contacts", title: "Contacts" },
+  { url: "/portfolio-new/index.html", title: "Home" },
+  { url: "/portfolio-new/projects/index.html", title: "Projects" },
+  { url: "/portfolio-new/resume/index.html", title: "Resume" },
+  { url: "/portfolio-new/contacts/index.html", title: "Contact" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
+
+
+
+
 
 // Create a <nav> element and prepend it to <body>
 let nav = document.createElement("nav");
