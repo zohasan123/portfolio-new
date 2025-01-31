@@ -2,14 +2,21 @@ console.log("IT’S ALIVE!");
 
 
 // TODO: Change the urls when you push to GitHub
+// let pages = [
+//   { url: "", title: "Home" },
+//   { url: "projects/", title: "Projects" },
+//   { url: "resume/", title: "Resume" },
+//   { url: "contacts/", title: "Contact" },
+//   { url: "https://github.com/zohasan123", title: "GitHub" },
+// ];
+
 let pages = [
-  { url: "", title: "Home" },
-  { url: "projects/", title: "Projects" },
-  { url: "resume/", title: "Resume" },
-  { url: "contacts/", title: "Contact" },
+  { url: "/portfolio-new/index.html", title: "Home" },
+  { url: "/portfolio-new/projects/index.html", title: "Projects" },
+  { url: "/portfolio-new/resume/index.html", title: "Resume" },
+  { url: "/portfolio-new/contacts/index.html", title: "Contact" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
-
 
 
 
