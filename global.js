@@ -93,3 +93,50 @@ function colorScheme(colorScheme) {
   } else {
     colorScheme("light dark");
   }
+
+
+
+  export async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+        console.log(response); // Inspect the response object in the browser console
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
+
+        const data = await response.json(); // Parse the response
+        return data;
+
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
+}
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  // Clear existing content to prevent duplication
+  containerElement.innerHTML = '';
+
+  // Loop through each project and create an article element
+  projects.forEach(project => {
+      // Create a new <article> element
+      const article = document.createElement('article');
+      article.classList.add("project");
+
+      // Ensure a valid heading level (fallback to 'h2' if invalid)
+      const validHeadingLevels = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+      const headingTag = validHeadingLevels.includes(headingLevel) ? headingLevel : 'h2';
+
+      // Define the content dynamically with a flexible heading level
+      article.innerHTML = `
+          <${headingTag}>${project.title}</${headingTag}>
+          <img src="${project.image}" alt="${project.title}">
+          <p>${project.description}</p>
+      `;
+
+      // Append the article to the container element
+      containerElement.appendChild(article);
+  });
+}
+
+
