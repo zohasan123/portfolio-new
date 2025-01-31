@@ -37,7 +37,6 @@ let pages = [
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
 
-
 // Create a <nav> element and prepend it to <body>
 let nav = document.createElement("nav");
 document.body.prepend(nav);
@@ -130,6 +129,7 @@ function colorScheme(colorScheme) {
 export function renderProjects(projects, containerElement, headingLevel ='h2') {
   // Clear the existing content of the container element
   containerElement.innerHTML = '';
+  console.log(projects)
 
   // Loop through each project to create an article element for each
   for (let project of projects) {
