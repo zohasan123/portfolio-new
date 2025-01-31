@@ -1,5 +1,7 @@
 console.log("IT’S ALIVE!");
 
+console.log("global.js loaded!");
+
 
 // TODO: Change the urls when you push to GitHub
 // let pages = [
@@ -19,13 +21,22 @@ console.log("IT’S ALIVE!");
 // ];
 
 
+// let pages = [
+//     { url: "/portfolio-new/", title: "Home" },
+//     { url: "/portfolio-new/projects/", title: "Projects" },
+//     { url: "/portfolio-new/resume/", title: "Resume" },
+//     { url: "/portfolio-new/contacts/", title: "Contacts" },
+//     { url: "https://github.com/zohasan123", title: "GitHub" },
+//   ];
+
 let pages = [
-    { url: "/portfolio-new/", title: "Home" },
-    { url: "/portfolio-new/projects/", title: "Projects" },
-    { url: "/portfolio-new/resume/", title: "Resume" },
-    { url: "/portfolio-new/contacts/", title: "Contacts" },
-    { url: "https://github.com/zohasan123", title: "GitHub" },
-  ];
+  { url: "index.html", title: "Home" },
+  { url: "projects/index.html", title: "Projects" },
+  { url: "resume/index.html", title: "Resume" },
+  { url: "contacts/index.html", title: "Contacts" },
+  { url: "https://github.com/zohasan123", title: "GitHub" },
+];
+
 
 // Create a <nav> element and prepend it to <body>
 let nav = document.createElement("nav");
