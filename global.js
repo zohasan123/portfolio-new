@@ -98,39 +98,21 @@ function colorScheme(colorScheme) {
 
 
 
-//   export async function fetchJSON(url) {
-//     try {
-//         const response = await fetch(url);
-//         console.log(response); // Inspect the response object in the browser console
+  export async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+        console.log(response); // Inspect the response object in the browser console
 
-//         if (!response.ok) {
-//             throw new Error(`Failed to fetch projects: ${response.statusText}`);
-//         }
+        if (!response.ok) {
+            throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
 
-//         const data = await response.json(); // Parse the response
-//         return data;
+        const data = await response.json(); // Parse the response
+        return data;
 
-//     } catch (error) {
-//         console.error('Error fetching or parsing JSON data:', error);
-//     }
-// }
-
-export async function fetchJSON(url) {
-  try {
-      const response = await fetch(url);
-      console.log("Response Object:", response); // Debugging: Check response in console
-
-      if (!response.ok) {
-          throw new Error(`Failed to fetch projects: ${response.statusText}`);
-      }
-
-      const data = await response.json();
-      console.log("Fetched JSON Data:", data); // Debugging: Check if JSON data loads correctly
-      return data;
-
-  } catch (error) {
-      console.error('Error fetching or parsing JSON data:', error);
-  }
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
 }
 
   
