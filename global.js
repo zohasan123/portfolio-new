@@ -1,12 +1,12 @@
 console.log("IT’S ALIVE!");
 
 
-
+// TODO: Change the urls when you push to GitHub
 let pages = [
-  { url: "/portfolio-new/index.html", title: "Home" },
-  { url: "/portfolio-new/projects/index.html", title: "Projects" },
-  { url: "/portfolio-new/resume/index.html", title: "Resume" },
-  { url: "/portfolio-new/contacts/index.html", title: "Contact" },
+  { url: "", title: "Home" },
+  { url: "projects/", title: "Projects" },
+  { url: "resume/", title: "Resume" },
+  { url: "contacts/", title: "Contact" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
 
@@ -33,13 +33,14 @@ for (let p of pages) {
   a.textContent = title; // Set the link text
 
   // Highlight the current page
-  a.classList.toggle(
-    "current",
-    a.host === location.host && a.pathname === location.pathname
-  );
+  if (location.host && a.pathname === location.pathname) {
+    a.classList.add("current");
+  }
 
   // Open external links in a new tab
-  a.toggleAttribute("target", a.host !== location.host);
+  if (a.host !== location.host) {
+    a.target = "_blank";
+  }
 
   // Append the link to the <nav>
   nav.append(a);
