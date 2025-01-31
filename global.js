@@ -96,6 +96,8 @@ function colorScheme(colorScheme) {
 
 
 
+
+
   export async function fetchJSON(url) {
     try {
         const response = await fetch(url);
@@ -113,30 +115,30 @@ function colorScheme(colorScheme) {
     }
 }
 
-export function renderProjects(projects, containerElement, headingLevel = 'h2') {
-  // Clear existing content to prevent duplication
+
+
+  
+export function renderProjects(projects, containerElement, headingLevel ='h2') {
+  // Clear the existing content of the container element
   containerElement.innerHTML = '';
 
-  // Loop through each project and create an article element
-  projects.forEach(project => {
-      // Create a new <article> element
+  // Loop through each project to create an article element for each
+  for (let project of projects) {
+      // Create a new <article> element to hold the project's details
       const article = document.createElement('article');
-      article.classList.add("project");
 
-      // Ensure a valid heading level (fallback to 'h2' if invalid)
-      const validHeadingLevels = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-      const headingTag = validHeadingLevels.includes(headingLevel) ? headingLevel : 'h2';
+      // Create the dynamic heading element based on headingLevel
+      const heading = document.createElement(headingLevel);
+      heading.textContent = project.title;
 
-      // Define the content dynamically with a flexible heading level
+      // Populate the article with dynamic content
       article.innerHTML = `
-          <${headingTag}>${project.title}</${headingTag}>
+          ${heading.outerHTML}  <!-- Add the dynamic heading -->
           <img src="${project.image}" alt="${project.title}">
           <p>${project.description}</p>
       `;
 
       // Append the article to the container element
       containerElement.appendChild(article);
-  });
+  }
 }
-
-
