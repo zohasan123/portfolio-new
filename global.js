@@ -105,8 +105,9 @@ function colorScheme(colorScheme) {
   }
 
 
-
-
+  export async function fetchGitHubData(username) {
+      return fetchJSON(`https://api.github.com/users/${username}`);
+  }
 
   export async function fetchJSON(url) {
     try {
