@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Fetch and display GitHub profile stats
-        const githubData = await fetchGitHubData('zohasan123'); // Fetch GitHub data
+        const githubData = await fetchGithubData('zohasan123'); // Fetch GitHub data
         const profileStats = document.querySelector('#profile-stats'); // Select container
 
         if (profileStats) {
