@@ -1,62 +1,67 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis labore, quas accusantium amet vitae reprehenderit facere laborum. Voluptatibus, odio. Deserunt placeat suscipit quasi libero unde dolores quae laborum quas ipsum?"
+        "title": "Zoning Analysis and Predictive Modeling of Customers Affected in a Power Outage",
+        "year" : 2024,
+        "image": "https://media.wired.com/photos/61857ab5c4b863206a589936/master/pass/Gear-Prepare-for-Blackouts-1155510644.jpg",
+        "description": "Analyzed 1,500+ power outage events in the U.S. to create a model predicting the number of customers affected during a power outage."
     },
     {
-        "title": "Doloribus earum rem repudiandae.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quos nemo et iusto, pariatur iure consectetur harum, ipsam delectus eius sit tempore ad earum quae doloribus aut? Laboriosam necessitatibus dolorem accusantium incidunt beatae ex aliquam explicabo, molestias facere aperiam."
+        "title": "J.P. Morgan “Data for Good” Hackathon: Reccomendation to SocialWorks Non-Profit",
+        "year": 2025,
+        "image": "https://media.licdn.com/dms/image/v2/D5622AQEdpA1E6hZWfg/feedshare-shrink_1280/feedshare-shrink_1280/0/1728266064658?e=1741219200&v=beta&t=QMn6LHMlrMAfItBbUu1-NxK2F6WlmSJifWEpEfshcl4",
+        "description": "Conducted in-depth market research, exploratory data analysis, and developed a K-NN Classification Model to recommend Chicago neighborhoods that would maximize SocialWorks' non-profit impact."
     },
     {
-        "title": "Ipsum quam voluptate aliquam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Porro quo velit fugiat nobis consequatur, autem recusandae a rerum quas magnam. Error fuga repellendus vero deserunt architecto modi fugit aut quos magni, consequuntur voluptatum earum, cupiditate assumenda sint enim!"
+        "title": "HDSI Undergraduate Research Project: Predicting Homeless Shelter Capacity in San Diego",
+        "year": 2025,
+        "image": "https://centralca.cdn-anvilcms.net/media/images/2020/09/11/images/1.3.5-Homeless-San-Diego-7.max-752x423.jpg",
+        "description": "ML research project which aims to create a model that accurately forecasts short-term and long-term shelter capacity needs and predicts changes in the unsheltered population. By leveraging historical data on shelter usage, weather patterns, economic indicators, and demographic trends, the predictive model should provide insights for policymakers and service providers, helping them optimize resource allocation, improve emergency preparedness, and enhance the overall effectiveness of homelessness interventions.!"
     },
     {
-        "title": "Reiciendis, illum. Harum, quas.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nesciunt, necessitatibus. Quisquam libero architecto voluptate excepturi cumque ex magni labore obcaecati adipisci suscipit molestiae cupiditate nemo aperiam asperiores officia, numquam voluptas veniam reprehenderit dolore cum nostrum fuga possimus totam!"
+        "title": "Lyrical Landscapes: Mapping Emotional Themes to Music Popularity (2000–2023)",
+        "year": 2024,
+        "image": "https://www.cnet.com/a/img/resize/034ecacea4dbf0ae76529f37c2d0309b17b557ec/hub/2021/11/10/ab5e2d3b-9a4a-41f0-b2cd-6cee804ce823/genre-charts-covers.png?auto=webp&fit=crop&height=675&width=1200",
+        "description": "Using sentiment analysis, which lyrical themes—such as love, empowerment, struggle, anger, hope, celebration, and nostalgia—are most commonly identified in the top songs of Spotify's English-language genres (Pop, Rap, Rock, R&B) from 2000 to 2023?"
     },
     {
-        "title": "Totam molestiae harum sit?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Distinctio sequi veritatis nam dolor! Mollitia nulla ab quod magni omnis! Sed nostrum similique ab quasi sint quaerat nisi doloremque, molestiae rerum, molestias delectus adipisci aperiam necessitatibus eum commodi magnam."
+        "title": "UCSD SMASH & NSF HDR ML Challenge Hackathon",
+        "year": 2025,
+        "image": "https://indico.cern.ch/event/1489401/logo-3797433634.png",
+        "description": "Utilized the provided LIGO O3 datasets to train models, focusing on detecting unusual patterns in the strain data without relying on pre-defined templates."
     },
     {
-        "title": "Ut, praesentium quidem! Ratione.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Autem culpa molestias laudantium voluptatibus facere dolore maiores, repellendus quis! Similique natus, excepturi optio in, praesentium distinctio dolorem nulla, eligendi aperiam error voluptatem veniam placeat dolor quod suscipit autem illo."
+        "title": "AI-Powered Stock Analysis",
+        "image": "https://cdn.pixabay.com/photo/2017/12/29/11/51/artificial-intelligence-3042291_1280.jpg",
+        "description": "An AI-driven platform that predicts stock price movements based on historical trends and sentiment analysis from news articles."
     },
     {
-        "title": "Excepturi quasi suscipit aliquid!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ipsa quos quam illo libero minima explicabo itaque officia excepturi recusandae veritatis quasi, voluptates sed doloremque sapiente, expedita facilis fugit voluptatibus pariatur, ab ratione! Non labore provident ea quasi maxime."
+        "title": "Eco-Friendly Smart Home System",
+        "image": "https://cdn.pixabay.com/photo/2018/02/07/12/51/smart-home-3139224_1280.jpg",
+        "description": "A smart home automation system that optimizes energy usage and suggests sustainable alternatives for reducing carbon footprint."
     },
     {
-        "title": "Dolor doloribus temporibus error.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Alias recusandae nihil dolores nostrum iusto accusantium earum? Iste recusandae nostrum nemo eligendi, aliquam, dicta omnis impedit minus maxime deleniti cumque consectetur nisi eveniet incidunt, officiis reprehenderit similique possimus a?"
+        "title": "Personalized Workout Assistant",
+        "image": "https://cdn.pixabay.com/photo/2016/08/27/14/35/fitness-1623069_1280.jpg",
+        "description": "A mobile app that generates customized workout plans based on user preferences, body metrics, and AI recommendations."
     },
     {
-        "title": "Quo dignissimos praesentium temporibus!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Exercitationem esse maxime natus quos cupiditate eaque alias amet nobis. Consequatur eligendi corporis, illo, voluptatem adipisci minima quidem cumque similique, asperiores omnis numquam et in repellendus fugit aliquid fuga aut."
+        "title": "Language Learning Chatbot",
+        "image": "https://cdn.pixabay.com/photo/2017/01/18/16/17/chatbot-1999342_1280.jpg",
+        "description": "An interactive chatbot that helps users practice new languages through AI-driven conversations and speech recognition."
     },
     {
-        "title": "Corrupti tempore officia soluta?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Vel aperiam iure nisi obcaecati at quibusdam, porro neque nobis numquam inventore eligendi eum pariatur necessitatibus officia rem sapiente dolor quae architecto aliquam culpa! Odit asperiores aut quidem suscipit commodi."
+        "title": "AI-Generated Art Gallery",
+        "image": "https://cdn.pixabay.com/photo/2017/06/23/18/07/abstract-2436874_1280.jpg",
+        "description": "A web-based platform that generates AI-created digital artwork based on user-inputted themes and emotions."
     },
     {
-        "title": "Distinctio maxime hic fuga.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Vitae nostrum deserunt quasi obcaecati, beatae quibusdam placeat. Vitae, explicabo minus et similique pariatur dolorem, consequatur id accusamus optio nam sit possimus facilis velit porro aliquam sequi? Expedita, recusandae iure."
+        "title": "Autonomous Drone Delivery",
+        "image": "https://cdn.pixabay.com/photo/2018/04/04/11/23/drone-3284299_1280.jpg",
+        "description": "An innovative drone delivery service that leverages AI-powered route optimization to enhance efficiency in urban logistics."
     },
     {
-        "title": "Illo provident fugit minima.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Itaque delectus velit deserunt repellat aspernatur at omnis laborum laboriosam deleniti provident dignissimos ipsa, eligendi blanditiis consectetur. Earum, perferendis quo, ullam optio ratione corrupti commodi quia deleniti, maiores voluptate ab."
+        "title": "Smart Resume Analyzer",
+        "image": "https://cdn.pixabay.com/photo/2015/01/09/11/09/startup-594090_1280.jpg",
+        "description": "An AI-powered tool that analyzes resumes and provides personalized feedback based on job description keywords and industry standards."
     }
 ]
