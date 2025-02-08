@@ -18,10 +18,10 @@
         "description": "ML research project which aims to create a model that accurately forecasts short-term and long-term shelter capacity needs and predicts changes in the unsheltered population. By leveraging historical data on shelter usage, weather patterns, economic indicators, and demographic trends, the predictive model should provide insights for policymakers and service providers, helping them optimize resource allocation, improve emergency preparedness, and enhance the overall effectiveness of homelessness interventions.!"
     },
     {
-        "title": "Lyrical Landscapes: Mapping Emotional Themes to Music Popularity (2000–2023)",
+        "title": "Lyrical Landscapes: Mapping Emotional Themes to Music Popularity ",
         "year": 2024,
         "image": "https://www.cnet.com/a/img/resize/034ecacea4dbf0ae76529f37c2d0309b17b557ec/hub/2021/11/10/ab5e2d3b-9a4a-41f0-b2cd-6cee804ce823/genre-charts-covers.png?auto=webp&fit=crop&height=675&width=1200",
-        "description": "Using sentiment analysis, which lyrical themes—such as love, empowerment, struggle, anger, hope, celebration, and nostalgia—are most commonly identified in the top songs of Spotify's English-language genres (Pop, Rap, Rock, R&B) from 2000 to 2023?"
+        "description": "Using sentiment analysis, which lyrical themes—such as love, empowerment, struggle, anger, hope, celebration, and nostalgia—are most commonly identified in the top songs of Spotify's English-language genres (Pop, Rap, Rock, R&B) from range of years?"
     },
     {
         "title": "UCSD SMASH & NSF HDR ML Challenge Hackathon",

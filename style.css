@@ -224,3 +224,89 @@ nav a.current {
   overflow: visible;
 }
 
+
+.legend {
+  display: grid;
+  grid-auto-flow: column;  /* Forces all items into a single row */
+  gap: 1em;                /* Outer gap between legend items */
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em 0;
+  list-style: none;  /* Removes the default bullet points */
+  padding-left: 0; 
+}
+
+Each legend item
+.legend li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0.5em;             /* Inner gap between the swatch and the text */
+}
+
+/* The swatch styling */
+.legend li .swatch {
+  display: inline-block;  /* Allows width and height to be applied */
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;     /* Ensures a square shape */
+  background-color: var(--color); /* Uses the color set by D3 */
+  border-radius: 50%;     /* Makes it a circle; adjust if you prefer rounded square */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;     /* Arrange items in a row */
+  align-items: center;     /* Vertically center items */
+  justify-content: flex-start; /* Start alignment from the left */
+  gap: 1em;                /* Space between the SVG and the legend */
+  flex-wrap: nowrap;       /* Prevent items from wrapping onto a new line */
+  width: 100%;             /* Ensure the container uses available width */
+}
+
+/* Give the SVG a fixed width to ensure it's visible */
+.container svg {
+  flex: 0 0 auto;         /* Prevent it from shrinking */
+  width: 150px;           /* Or any width you prefer */
+  height: auto;           /* Height will be determined by the viewBox's aspect ratio */
+}
+
+.searchBar {
+  display: block;           /* Make it block-level so it can take full width */
+  width: 100%;              /* Use the full available width of its container */
+  max-width: 600px;         /* Limit the width to a reasonable maximum */
+  padding: 0.75rem 1rem;     /* Increase the padding for a larger clickable area */
+  font-size: 1.2rem;        /* Increase the font size */
+  margin: 1em auto;         /* Center the search bar and add vertical spacing */
+  border: 2px solid #ccc;   /* A slightly thicker border */
+  border-radius: 4px;       /* Rounded corners for a softer look */
+  box-sizing: border-box;   /* Ensure padding and border are included in the width */
+}
+
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+path {
+  transition: opacity 300ms;
+}
+
+
+/* For pie slices: a selected wedge changes its fill color */
+path.selected {
+  fill: oklch(60% 45% 0) !important;
+}
+
+/* For legend items: highlight by, for example, changing background color */
+.legend-item.selected {
+  background-color: oklch(60% 45% 0) !important;
+  /* You might also adjust text color or other properties as desired */
+}
+
+/* When a legend item is selected, bold its text */
+.legend-item.bolded {
+  font-weight: bold;
+  /* Remove any background or accent color if previously applied */
+  background: none;
+  color: inherit;
+}
