@@ -34,6 +34,7 @@ let pages = [
   { url: "projects/index.html", title: "Projects" },
   { url: "resume/index.html", title: "Resume" },
   { url: "contacts/index.html", title: "Contacts" },
+  { url: "meta/index.html", title: "Meta" },
   { url: "https://github.com/zohasan123", title: "GitHub" },
 ];
 
